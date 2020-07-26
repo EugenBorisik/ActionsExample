@@ -33,3 +33,11 @@ jobs:
     #  run: |
     #    cd ixo && ./gradlew allureReport
     #    zip allure-report.zip -r build/reports/allure-report
+    - name: Generate report
+      run: |
+        mvn allure:report
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: allure-report
+        path: allure-reports/
