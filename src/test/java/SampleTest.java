@@ -33,7 +33,7 @@ public class SampleTest {
   public void t1() {
     driver.get("https://mail.ru/");
 
-    Assertions.assertEquals("Mail.ru: почта, поиск в интернете, новости, игры", driver.getTitle());
+    Assertions.assertEquals("Mail.ru: почта, поиск в интернете, новост3и, игры", driver.getTitle());
   }
 
   @Test
